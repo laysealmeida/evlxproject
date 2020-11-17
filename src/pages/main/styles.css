@@ -1,0 +1,114 @@
+#product-list {
+    max-width: 400px;
+    margin: 20px auto 0;
+    padding: 0 20px;
+    background: #dae0e5;
+}
+
+.product-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #dae0e5;
+}
+
+.product-list article {
+    width: 500px;
+    background: #fff;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.product-list article:hover {
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
+}
+
+.product-list article p{
+    font-size: 16px;
+    color: #999;
+    margin-top: 5px;
+    line-height: 24px;
+}
+
+.product-list article a{
+    height: 42px;
+    border-radius: 5px;
+    border: 2px solid #04848a;
+    background: none;
+    margin-top: 10px;
+    color: #04848a;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2 s;
+}
+
+.product-list article a:hover{
+    background: #04848a;
+    color: #fff;
+}
+
+.product-list .actions {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.product-list .actions button {
+   padding: 10px;
+   border-radius: 5px;
+   border: 0;
+   background: #04848a;
+   color: #fff;
+   font-size: 16px;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+.product-list .actions button[disabled]{
+    opacity: 0.5;
+    cursor: default;
+}
+
+.product-list .actions button[disabled]:hover{
+    opacity: 0.5;
+}
+.product-list .actions button:hover {
+    opacity: 0.7;
+}
+
+.bi.bi-telephone-fill{
+    margin-right: 5px;
+}
+
+.loading{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    top: 0;
+}
+
+.loading svg{
+      -webkit-animation:spin 2s linear infinite;
+    -moz-animation:spin 2s linear infinite;
+    animation:spin 2s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
